@@ -1,0 +1,4 @@
+---
+
+load_balancer: aws-load-balancer-id
+vpn: aws-vpn-id

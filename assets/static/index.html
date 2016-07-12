@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title>AWS monitoring</title>
+  <style>
+    body {
+      background: linear-gradient(271deg, #e824d8, #00f31f);
+      background-size: 400% 400%;
+
+      -webkit-animation: AnimationName 10s ease infinite;
+      -moz-animation: AnimationName 10s ease infinite;
+      animation: AnimationName 10s ease infinite;
+    }
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $.get("/data", function(data) {
+        $("#data").text(data);
+      });
+    });
+  </script>
+</head>
+<body style="width: 100%; height: 100%">
+  <marquee style="width: 100%; height: 100%; font-size: 6em; font-family: sans-serif;" direction="down" behavior="alternate">
+    <marquee behavior="alternate">
+      Coming Soon!
+      <div style="font-size: 14px;">
+        <strong>Sneak preview:</strong>
+        <pre id="data"></pre>
+      </div>
+    </marquee>
+  </marquee>
+</body>
+</html>
