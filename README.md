@@ -1,4 +1,4 @@
-aws-status
+dp-web-status
 ==========
 
 A monitoring tool for AWS components.

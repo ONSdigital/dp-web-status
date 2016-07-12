@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/ONSdigital/aws-status/assets"
-	"github.com/ONSdigital/aws-status/aws"
+	"github.com/ONSdigital/dp-web-status/assets"
+	"github.com/ONSdigital/dp-web-status/aws"
 	"github.com/gorilla/pat"
 )
 

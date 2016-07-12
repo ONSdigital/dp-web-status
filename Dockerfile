@@ -1,6 +1,6 @@
 FROM alpine
 
-ADD aws_status_linux_amd64 /
+ADD dp_web_status_linux_amd64 /
 ADD config.yml /
 
 RUN apk --update upgrade && \
@@ -10,4 +10,4 @@ RUN apk --update upgrade && \
 
 EXPOSE 8080
 
-CMD /aws_status_linux_amd64
+CMD /dp_web_status_linux_amd64
